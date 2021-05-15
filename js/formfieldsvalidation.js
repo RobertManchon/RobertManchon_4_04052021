@@ -95,17 +95,17 @@ function checkCheckBox() {
 }
 
 // Form Fields to validate
-function formFieldsValidation(element, method, event) {
+function formfieldsvalidation(element, method, event) {
     element.addEventListener(event, method);
 }
 //Events form
-formFieldsValidation(firstName, checkFirstName, 'focusout');
-formFieldsValidation(lastName, checkLastName, 'focusout');
-formFieldsValidation(email, checkEmail, 'focusout');
-formFieldsValidation(birthdate, checkBirthdate, 'focusout');
-formFieldsValidation(quantity, checkTournamentsQuantity, 'focusout');
-formFieldsValidation(allLocations, checkLocations, 'change');
-formFieldsValidation(checkbox1, checkCheckBox, 'change');
+formfieldsvalidation(firstName, checkFirstName, 'focusout');
+formfieldsvalidation(lastName, checkLastName, 'focusout');
+formfieldsvalidation(email, checkEmail, 'focusout');
+formfieldsvalidation(birthdate, checkBirthdate, 'focusout');
+formfieldsvalidation(quantity, checkTournamentsQuantity, 'focusout');
+formfieldsvalidation(allLocations, checkLocations, 'change');
+formfieldsvalidation(checkbox1, checkCheckBox, 'change');
 
 // For  All  Fields Validation
 function forAllFieldsValidation() {
