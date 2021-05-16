@@ -7,31 +7,31 @@ const birthdate = document.getElementById('birthdate');
 const allLocations = document.getElementById('allLocations');
 const locations = document.querySelectorAll('#allLocations .checkbox-input');
 const checkbox1 = document.getElementById('checkbox1');
-const input = document.getElementsByClassName('text-control');
+//const input = document.getElementsByClassName('text-control');
 const form = document.getElementById('form');
 const regex = /^[a-zA-ZÀ-ÖØ-öø-ÿ]+$/;
 
 // ------ Form Fields Validation ------ //
 // Names Check (First Name and Last Name)
 function checkFirstName() {
-    if (firstName.value.trim().length < 2 || first.value.trim() === '' || !firstName.value.match(regex)) {
+    if (firstName.value.trim().length < 2 || firstName.value.trim() === '' || !firstName.value.match(regex)) {
         firstName.parentElement.setAttribute('data-error-visible', 'true');
         firstName.style.border = '2px solid #e54858';
         return false;
     }
-    first.parentElement.setAttribute('data-error-visible', 'false');
-    first.style.border = 'solid #279e7a 0.19rem';
+    firstName.parentElement.setAttribute('data-error-visible', 'false');
+    firstName.style.border = 'solid #279e7a 0.19rem';
     return true;
 }
 
 function checkLastName() {
-    if (lastName.value.trim().length < 2 || last.value.trim() === "" || !lastName.value.match(regex)) {
+    if (lastName.value.trim().length < 2 || lastName.value.trim() === "" || !lastName.value.match(regex)) {
         lastName.parentElement.setAttribute('data-error-visible', 'true');
         lastName.style.border = '2px solid #e54858';
         return false;
     }
-    last.parentElement.setAttribute('data-error-visible', 'false');
-    last.style.border = 'solid #279e7a 0.19rem';
+    lastName.parentElement.setAttribute('data-error-visible', 'false');
+    lastName.style.border = 'solid #279e7a 0.19rem';
     return true;
 }
 
@@ -57,6 +57,7 @@ function checkBirthdate() {
     }
     birthdate.parentElement.setAttribute('data-error-visible', 'false');
     birthdate.style.border = 'solid #279e7a 0.19rem';
+
     return true;
 }
 
@@ -130,4 +131,13 @@ function formValidation() {
     }
     return false;
 }
-
+// Send Form
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (formValidation() === true) {
+        displayModalSubmit();
+        document.querySelector('form').reset();
+    } else {
+        forAllFieldsValidation();
+    }
+});
