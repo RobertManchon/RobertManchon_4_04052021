@@ -35,7 +35,7 @@ img {
   align-items: center;
  justify-content: space-between;
 }
-.header-logo {
+.HeaderLogo {
     float: left;
 }
 .main-navbar {
@@ -81,7 +81,7 @@ main {
   text-align: justify;
   align-items: center;
 }
-.modal-btn {
+.ModalBtn {
   font-size: 145%;
   background: #fe142f;
   display: flex;
@@ -92,7 +92,7 @@ main {
   border-radius: 1rem;
   cursor: pointer;
 }
-.modal-btn:hover {
+.ModalBtn:hover {
   background: #3876ac;
 }
 
@@ -103,7 +103,7 @@ main {
 }
 
 /* Modal form */
-.btn-submit {
+.BtnSubmit {
   background: #fe142f;
   margin-top: 0.5em;
   padding: 1em;
@@ -113,7 +113,7 @@ main {
   font-size: 16px;
 }
 
-.btn-submit:hover {
+.BtnSubmit:hover {
   background: #3876ac;
 }
 
@@ -121,7 +121,7 @@ main {
   font-size: 16px;
 }
 
-.bground {
+.Bground {
   display: none;
   position: fixed;
   z-index: 1;
@@ -133,7 +133,7 @@ main {
   background-color: rgba(26, 39, 156, 0.4);
 }
 
-.content {
+.Content {
   margin: 5% auto;
   width: 100%;
   max-width: 500px;
@@ -147,7 +147,7 @@ main {
   padding-top: 10px;
 }
 
-.modal-body {
+.ModalBody {
   padding: 15px 8%;
   margin: 15px auto;
 }
@@ -166,7 +166,7 @@ input {
   outline: none;
 }
 
-.text-control {
+.TextControl {
   margin: 0;
   padding: 8px;
   width: 100%;
@@ -175,7 +175,7 @@ input {
   height: 48px;
 }
 
-.formData[data-error]::after {
+.FormData[data-error]::after {
   content: attr(data-error);
   font-size: 0.5em;
   color: #FF4E60;
@@ -188,7 +188,7 @@ input {
   transition: 0.3s;
 }
 
-.formData[data-error-visible="true"]::after {
+.FormData[data-error-visible="true"]::after {
   opacity: 1;
 }
 
@@ -198,16 +198,16 @@ input[data-error]::after {
   color: red;
 }
 
-.checkbox-label,
-.checkbox2-label {
+.CheckboxLabel,
+.Checkbox2Label {
   position: relative;
   margin-left: 36px;
   font-size: 12px;
   font-weight: normal;
 }
 
-.checkbox-label .checkbox-icon,
-.checkbox2-label .checkbox-icon {
+.CheckboxLabel .CheckboxIcon,
+.Checkbox2Label .CheckboxIcon {
   display: block;
   width: 20px;
   height: 20px;
@@ -221,8 +221,8 @@ input[data-error]::after {
   transition: 0.3s;
 }
 
-.checkbox-label .checkbox-icon::after,
-.checkbox2-label .checkbox-icon::after {
+.CheckboxLabel .CheckboxIcon::after,
+.Checkbox2Label .CheckboxIcon::after {
   content: "";
   width: 13px;
   height: 13px;
@@ -238,26 +238,26 @@ input[data-error]::after {
   opacity: 0;
 }
 
-.checkbox-input {
+.CheckboxInput {
   display: none;
 }
 
-.checkbox-input:checked+.checkbox-label .checkbox-icon::after,
-.checkbox-input:checked+.checkbox2-label .checkbox-icon::after {
+.CheckboxInput:checked+.CheckboxLabel .CheckboxIcon::after,
+.CheckboxInput:checked+.Checkbox2Label .CheckboxIcon::after {
   opacity: 1;
 }
 
-.checkbox-input:checked+.checkbox2-label .checkbox-icon {
+.CheckboxInput:checked+.Checkbox2Label .CheckboxIcon {
   background: #279e7a;
 }
 
-.checkbox2-label .checkbox-icon {
+.Checkbox2Label .CheckboxIcon {
   border-radius: 4px;
   border: 0;
   background: #c4c4c4;
 }
 
-.checkbox2-label .checkbox-icon::after {
+.Checkbox2Label .CheckboxIcon::after {
   width: 7px;
   height: 4px;
   border-radius: 2px;
@@ -270,7 +270,7 @@ input[data-error]::after {
   top: 19%;
 }
 
-.close {
+.Close {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -281,8 +281,8 @@ input[data-error]::after {
   transform: scale(0.7);
 }
 
-.close:before,
-.close:after {
+.Close:before,
+.Close:after {
   position: absolute;
   left: 15px;
   content: " ";
@@ -291,15 +291,15 @@ input[data-error]::after {
   background-color: #fff;
 }
 
-.close:before {
+.Close:before {
   transform: rotate(45deg);
 }
 
-.close:after {
+.Close:after {
   transform: rotate(-45deg);
 }
 
-.btn-submit,.btn-signup {
+.BtnSubmit,.BtnSignup {
   background: #fe142f;
   display: block;
   margin: 0 auto;
@@ -383,7 +383,7 @@ input[data-error]::after {
   font-size: 16px;
 }
 
-.hero-section {
+.HeroSection {
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -391,7 +391,7 @@ input[data-error]::after {
   box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.2);
 }
 
-.hero-content {
+.HeroContent {
   padding: 51px 67px;
   grid-column: span 4;
   background: #232323;
@@ -401,7 +401,7 @@ input[data-error]::after {
   min-width: 424px;
 }
 
-.hero-content::after {
+.HeroContent::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -411,19 +411,19 @@ input[data-error]::after {
   top: 0;
 }
 
-.hero-content>* {
+.HeroContent>* {
   position: relative;
   z-index: 1;
 }
 
-.hero-headline {
+.HeroHeadline {
   font-size: 4em;
   font-weight: normal;
   width: 100%;
   white-space: nowrap;
 }
 
-.hero-text {
+.HeroText {
   width: 146%;
   font-weight: normal;
   margin-top: 57px;
@@ -431,7 +431,7 @@ input[data-error]::after {
   font-size: 2vw;
 }
 
-.btn-signup {
+.BtnSignup {
   outline: none;
   text-transform: none;
   font-size: 1.3rem;
@@ -440,11 +440,11 @@ input[data-error]::after {
   width: 12.5rem;
 }
 
-.hero-img {
+.HeroImg {
   grid-column: span 8;
 }
 
-.hero-img img {
+.HeroImg img {
   width: 100%;
   height: 100%;
   display: block;
@@ -459,7 +459,7 @@ input[data-error]::after {
   font-weight: bolder;
 }
 
-.hero-section>.btn-signup {
+.HeroSection>.BtnSignup {
   display: none;
 }
 
@@ -482,7 +482,7 @@ footer {
 }
 
 /* Confirmation Submit Modal */
-.container-confirmation-submit {
+.ContainerConfirmationSubmit {
   display: none;
   background-color: rgba(35, 35, 35, .5);
   width: 100%;
@@ -496,7 +496,7 @@ footer {
   z-index: 3;
 }
 
-.submitted-form {
+.SubmittedForm {
   width: 100%;
   height: 100%;
   left: 0;
@@ -505,7 +505,7 @@ footer {
   top: 0;
 }
 
-.close-modal-submit {
+.CloseModalSubmit {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -517,7 +517,7 @@ footer {
   color: #FFFFFF;
 }
 
-.close-modal-submit:before,.close-modal-submit:after {
+.CloseModalSubmit:before,.CloseModalSubmit:after {
   position: absolute;
   left: 0.9375rem;
   content: " ";
@@ -526,15 +526,15 @@ footer {
   background-color: #fff;
 }
 
-.close-modal-submit:before {
+.CloseModalSubmit:before {
   transform: rotate(45deg);
 }
 
-.close-modal-submit:after {
+.CloseModalSubmit:after {
   transform: rotate(-45deg);
 }
 
-.submitted-form p {
+.SubmittedForm p {
   width: 100%;
   height: 100%;
   background-color: #232323;
@@ -546,7 +546,7 @@ footer {
   text-align: center;
 }
 
-#close-btn-confirmation {
+#CloseBtnConfirmation {
   position: relative;
   top: -165px;
   outline: none;
@@ -594,49 +594,49 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  .header-logo img {
+  .HeaderLogo img {
     width: 150px;
   }
 
-  .hero-section {
+  .HeroSection {
     display: block;
     box-shadow: unset;
   }
 
-  .hero-content {
+  .HeroContent {
     background: #fff;
     color: #000;
     padding: 0;
     min-width: auto;
   }
 
-  .hero-content::after {
+  .HeroContent::after {
     content: unset;
   }
 
-  .hero-content .btn-signup {
+  .HeroContent .BtnSignup {
     display: none;
   }
 
-  .hero-headline {
+  .HeroHeadline {
     width: 100%;
     flex-wrap: wrap;
     font-size: 2.5rem;
     white-space: normal;
   }
 
-  .hero-text {
+  .HeroText {
     width: unset;
     font-size: 1rem;
     margin-top: 1.5rem;
   }
 
-  .hero-img img {
+  .HeroImg img {
     border-radius: 10px;
     margin-top: 40px;
   }
 
-  .hero-section>.btn-signup {
+  .HeroSection>.BtnSignup {
     display: block;
     margin: 32px auto 10px;
     padding: 12px 35px;

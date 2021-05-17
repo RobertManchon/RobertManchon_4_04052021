@@ -11,12 +11,12 @@
 
 <body>
 <div class="topnav" id="myTopnav">
-  <div class="header-logo">
-    <img alt="logo" src="img/logo.png" width="auto" height="auto" />
+  <div class="HeaderLogo">
+    <img alt="logo" src="img/logo.png" />
   </div>
-  <div class="main-navbar">
 
-    <a href="#" class="active"><span>Accueil</span></a>
+  <div class="main-navbar">
+    <a href="#" class="Active"><span>Accueil</span></a>
     <a href="#"><span>Détails de l'évènement</span></a>
     <a href="#"><span>À propos</span></a>
     <a href="#"><span>Contact</span></a>
@@ -26,134 +26,136 @@
     </a>
   </div>
 </div>
-</div>
+
 <main>
-  <div class="hero-section">
-    <div class="hero-content">
-      <h1 class="hero-headline">
+  <div class="HeroSection">
+    <div class="HeroContent">
+      <h1 class="HeroHeadline">
         Marathon national<br>
         de jeux vidéos
       </h1>
-      <p class="hero-text">
+      <p class="HeroText">
         Vous aimez jouer ? Notre prochain évènement gaming est ouvert
         aux réservations... Places limitées !
       </p>
-      <button class="btn-signup modal-btn">
+      <button class="BtnSignup ModalBtn">
         je m'inscris
       </button>
     </div>
-    <div class="hero-img">
+    <div class="HeroImg">
       <img src="img/bg_img.jpg" alt="img" />
     </div>
-    <button class="btn-signup modal-btn">
+    <button class="BtnSignup ModalBtn">
       je m'inscris
     </button>
   </div>
 
-  <div class="bground">
-    <div class="content">
-      <span class="close"></span>
-      <div class="modal-body">
+  <div class="Bground">
+    <div class="Content">
+      <span class="Close"></span>
+      <div class="ModalBody">
         <!--Form-->
         <form id="form" name="reserve" action="index.html" method="get">
           <!-- First Name -->
-          <div class="formData" data-error="Vous devez entrer 2 caractères ou plus." data-error-visible="false">
+          <div class="FormData" data-error="Vous devez entrer 2 caractères ou plus." data-error-visible="false">
             <label for="first">Prénom</label><br>
-            <input class="text-control success" type="text" id="first" name="first" minlength="2"
+            <input class="TextControlSuccess" type="text" id="first" name="first" minlength="2"
                    placeholder="Prénom" /><br>
           </div>
           <!-- Last Name -->
-          <div class="formData" data-error="Vous devez entrer 2 caractères ou plus." data-error-visible="false">
+          <div class="FormData" data-error="Vous devez entrer 2 caractères ou plus." data-error-visible="false">
             <label for="last">Nom</label><br>
-            <input class="text-control" type="text" id="last" name="last" placeholder="Nom" /><br>
+            <input class="TextControl" type="text" id="last" name="last" placeholder="Nom" /><br>
           </div>
           <!-- Email -->
-          <div class="formData" data-error="Vous devez entrer une adresse email valide." data-error-visible="false">
+          <div class="FormData" data-error="Vous devez entrer une adresse email valide." data-error-visible="false">
             <label for="email">E-mail</label><br>
-            <input class="text-control" type="email" id="email" name="email" placeholder="exemple@email.com" /><br>
+            <input class="TextControl" type="email" id="email" name="email" placeholder="exemple@email.com" /><br>
           </div>
           <!-- Birthdate -->
-          <div class="formData" data-error="Vous devez saisir votre date de naissance." data-error-visible="false">
+          <div class="FormData" data-error="Vous devez saisir votre date de naissance." data-error-visible="false">
             <label for="birthdate">Date de naissance</label><br>
-            <input class="text-control" type="date" id="birthdate" name="birthdate" /><br>
+            <input class="TextControl" type="date" id="birthdate" name="birthdate" /><br>
           </div>
           <!-- Tournamnents -->
-          <div class="formData" data-error="Veuillez saisir une valeur numérique." data-error-visible="false">
+          <div class="FormData" data-error="Veuillez saisir une valeur numérique." data-error-visible="false">
             <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
-            <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" placeholder="0">
+            <input type="number" class="TextControl" id="quantity" name="quantity" min="0" max="99" placeholder="0">
           </div>
           <!-- Locations -->
           <p class="text-label">Quelles villes ?</p>
-          <div class="formData" id="allLocations" data-error="Veuillez sélectionner une ville."
+          <div class="FormData" id="allLocations" data-error="Veuillez sélectionner une ville."
                data-error-visible="false">
-            <input class="checkbox-input" type="checkbox" id="location1" name="location" value="New York" />
-            <label class="checkbox-label" for="location1">
-              <span class="checkbox-icon"></span>
+            <input class="CheckboxInput" type="checkbox" id="location1" name="location" value="New York" />
+            <label class="CheckboxLabel" for="location1">
+              <span class="CheckboxIcon"></span>
               New York</label>
-            <input class="checkbox-input" type="checkbox" id="location2" name="location" value="San Francisco" />
-            <label class="checkbox-label" for="location2">
-              <span class="checkbox-icon"></span>
+            <input class="CheckboxInput" type="checkbox" id="location2" name="location" value="San Francisco" />
+            <label class="CheckboxLabel" for="location2">
+              <span class="CheckboxIcon"></span>
               San Francisco</label>
-            <input class="checkbox-input" type="checkbox" id="location3" name="location" value="Seattle" />
-            <label class="checkbox-label" for="location3">
-              <span class="checkbox-icon"></span>
+            <input class="CheckboxInput" type="checkbox" id="location3" name="location" value="Seattle" />
+            <label class="CheckboxLabel" for="location3">
+              <span class="CheckboxIcon"></span>
               Seattle</label>
-            <input class="checkbox-input" type="checkbox" id="location4" name="location" value="Chicago" />
-            <label class="checkbox-label" for="location4">
-              <span class="checkbox-icon"></span>
+            <input class="CheckboxInput" type="checkbox" id="location4" name="location" value="Chicago" />
+            <label class="CheckboxLabel" for="location4">
+              <span class="CheckboxIcon"></span>
               Chicago</label>
-            <input class="checkbox-input" type="checkbox" id="location5" name="location" value="Boston" />
-            <label class="checkbox-label" for="location5">
-              <span class="checkbox-icon"></span>
+            <input class="CheckboxInput" type="checkbox" id="location5" name="location" value="Boston" />
+            <label class="CheckboxLabel" for="location5">
+              <span class="CheckboxIcon"></span>
               Boston</label>
-            <input class="checkbox-input" type="checkbox" id="location6" name="location" value="Portland" />
-            <label class="checkbox-label" for="location6">
-              <span class="checkbox-icon"></span>
+            <input class="CheckboxInput" type="checkbox" id="location6" name="location" value="Portland" />
+            <label class="CheckboxLabel" for="location6">
+              <span class="CheckboxIcon"></span>
               Portland</label>
           </div>
           <!-- Terms of use  -->
-          <div class="formData" data-error="Vous devez accepter les conditions d'utilisation."
+          <div class="FormData" data-error="Vous devez accepter les conditions d'utilisation."
                data-error-visible="false">
-            <input class="checkbox-input" type="checkbox" id="checkbox1" />
-            <label class="checkbox2-label" for="checkbox1">
-              <span class="checkbox-icon"></span>
+            <input class="CheckboxInput" type="checkbox" id="checkbox1" />
+            <label class="Checkbox2Label" for="checkbox1">
+              <span class="CheckboxIcon"></span>
               J'ai lu et accepté les conditions d'utilisation.
             </label>
             <br>
-            <input class="checkbox-input" type="checkbox" id="checkbox2" />
-            <label class="checkbox2-label" for="checkbox2">
-              <span class="checkbox-icon"></span>
+            <input class="CheckboxInput" type="checkbox" id="checkbox2" />
+            <label class="Checkbox2Label" for="checkbox2">
+              <span class="CheckboxIcon"></span>
               Je souhaite être prévenu des prochains évènements.
             </label>
             <br>
           </div>
-          <input class="btn-submit" type="submit" value="C'est parti" />
+          <input class="BtnSubmit" type="submit" value="C'est parti" />
         </form>
       </div>
     </div>
   </div>
   <!--  Submit Confirmation -->
-  <div class="container-confirmation-submit">
-    <div class="submitted-form">
-      <span class="close-modal-submit"></span>
+  <div class="ContainerConfirmationSubmit">
+    <div class="SubmittedForm">
+      <span class="CloseModalSubmit"></span>
       <p>
         Merci !
         <br>
         Votre réservation a été reçue.
       </p>
-      <button id="close-btn-confirmation"> Fermer
+      <button id="CloseBtnConfirmation"> Fermer
       </button>
     </div>
   </div>
 
 </main>
+
 <footer>
   <p class="copyrights">
     Copyright 2014 - 2021, GameOn Inc.
   </p>
 </footer>
-<script src="js/modal.js"></script>
-<script src="js/formfieldsvalidation.js"></script>
-<script src="js/submittedconfirmation.js"></script>
+
+  <script src="js/modal.js"></script>
+  <script src="js/formfieldsvalidation.js"></script>
+  <script src="js/submittedconfirmation.js"></script>
 </body>
 </html>
